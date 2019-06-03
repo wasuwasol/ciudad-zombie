@@ -1,0 +1,83 @@
+body {
+  background-image: url('../imagenes/fondo.png');
+}
+
+canvas {
+  margin: auto;
+  display: flex;
+  margin-top: calc(50vh - 286px);
+}
+
+.boton-recargar {
+  margin: auto;
+  display: flex;
+  background: none;
+  border: none;
+  color: white;
+  font-family: monospace;
+  visibility: hidden;
+}
+
+#imagenes{
+  text-align: center;
+  display: block;
+}
+
+.inicio{
+  width: 961;
+  height: 572;
+  position: absolute;
+  -webkit-animation-name: inicio;
+  -webkit-animation-duration: 10s;
+  animation-name: inicio;
+  animation-duration: 10s;
+   animation-fill-mode: forwards;
+   -webkit-animation-fill-mode: forwards;
+      
+}
+
+@-webkit-keyframes inicio {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes inicio {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.final {
+  width: 961;
+  height: 572;  
+  -webkit-animation-name: final;
+  -webkit-animation-duration: 23s;
+  animation-name: final;
+  animation-duration: 23s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+
+@-webkit-keyframes final {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes final {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
